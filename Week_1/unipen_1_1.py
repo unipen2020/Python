@@ -1,9 +1,14 @@
-x = 5
-y = 6
+a = int(input('A='))
+b = int(input('B='))
+c = int(input('C='))
 
-print(x)
-print(y)
+K = a + b + c 
+S = K / 2.0
+temp = S*(S-a)*(S-b)*(S-c)
+T = pow(temp,0.5)
+
+print('A háromszög kerülete:{0}'.format(K))
+print('A háromszög területe:{0:.2}'.format(T))
 
 
-x , y , z = 1 , 2 , 3
-print('x={0} y={1} z={2}'.format(x,y,z))
+
